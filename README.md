@@ -56,8 +56,10 @@ can be passed:
 | log_level    | INFO                   | The log level to logging at                         |
 | log_location | STDOUT                 | Location to send all logs (can be a file or STDOUT) |
 
-[tfl_registration]: https://api-portal.tfl.gov.uk/signup
+Full documentation can be found on the project's [ruby docs][ruby_docs].
 
+[tfl_registration]: https://api-portal.tfl.gov.uk/signup
+[ruby_docs]: http://www.rubydoc.info/github/LukeHackett/tfl_api_client
 
 ## Changelog
 
