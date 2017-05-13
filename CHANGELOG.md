@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v0.5.0  [13-MAY-2017]
+* Added support for the /Journey resource.
+
+
+## v0.4.0  [18-APR-2017]
+* Added support for the /Cabwise resource.
+
+
 ## v0.3.0  [16-FEB-2017]
 * Added support for the /AccidentStats resource.
 * Added support for the /AirQuality resource.

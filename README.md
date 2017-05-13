@@ -56,7 +56,7 @@ can be passed:
 | log_level    | INFO                   | The log level to logging at                         |
 | log_location | STDOUT                 | Location to send all logs (can be a file or STDOUT) |
 
-[registration]: https://api-portal.tfl.gov.uk
+[tfl_registration]: https://api-portal.tfl.gov.uk/signup
 
 
 ## Changelog
