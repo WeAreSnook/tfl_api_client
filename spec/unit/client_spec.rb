@@ -135,6 +135,12 @@ describe TflApi::Client do
     end
   end
 
+  describe '#journey' do
+    it 'should return a Client::Journey object' do
+      expect(test_client.journey).to be_an_instance_of(TflApi::Client::Journey);
+    end
+  end
+
   describe '#get' do
     subject(:client) { test_client }
 

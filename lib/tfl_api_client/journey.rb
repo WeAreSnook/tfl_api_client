@@ -23,15 +23,43 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-require 'tfl_api_client/version'
-require 'tfl_api_client/client'
-require 'tfl_api_client/accident_stats'
-require 'tfl_api_client/air_quality'
-require 'tfl_api_client/bike_point'
-require 'tfl_api_client/cycle'
-require 'tfl_api_client/cabwise'
-require 'tfl_api_client/journey'
-require 'tfl_api_client/exceptions'
-
 module TflApi
+  class Client
+    # This class communicates with the TFL "/Journey" API to obtain
+    # details about taxis and minicabs contact information.
+    #
+    class Journey
+
+      # Initialize the Journey object and store the reference to Client object
+      #
+      # @param client [Client] the client object
+      #
+      # @return [Journey] the Journey object
+      #
+      def initialize(client)
+        @client = client
+      end
+
+      # Gets a list of all of the available journey planner modes.
+      #
+      # @return [Array] An array of all available journey planner modes
+      #
+      def modes
+        @client.get('/Journey/Meta/Modes')
+      end
+
+      # Perform a Journey Planner search from the parameters specified in
+      # simple types.
+      #
+      # @param from [String] the origin of the journey
+      # @param to   [String] the destination of the journey
+      #
+      # @return [Hash] A hash of planner journey results
+      #
+      def planner(from, to, params={})
+        @client.get("/Journey/JourneyResults/#{from}/to/#{to}", params)
+      end
+
+    end
+  end
 end

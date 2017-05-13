@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/Journey/JourneyResults/51.5007292,-0.1246254/to/Piccadilly%20Circus%20Station?app_id=TFL_APP_ID&app_key=TFL_APP_KEY&nationalSearch=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.tfl.gov.uk
+  response:
+    status:
+      code: 302
+      message: Unauthorized
+    headers:
+      Date:
+      - Sat, 13 May 2017 17:49:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4510'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d395a29bac7b7d6da35f946abb69ef83c1494697760; expires=Sun, 13-May-18
+        17:49:20 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Api-Entity-Payload:
+      - ItineraryResult, DisambiguationResult, Mode, StopPoint, Place, Disruption,
+        PlannedWorks, Line, LineStatus
+      Cache-Control:
+      - public, must-revalidate, max-age=150, s-maxage=300
+      Via:
+      - 1.1 varnish
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Backend:
+      - api
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '300.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - '943744740'
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 35e77429095e6ac7-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sat, 13 May 2017 17:49:20 GMT
+recorded_with: VCR 3.0.3

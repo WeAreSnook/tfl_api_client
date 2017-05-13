@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/Journey/Meta/Modes?app_id=TFL_APP_ID&app_key=TFL_APP_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.tfl.gov.uk
+  response:
+    status:
+      code: 302
+      message: Unauthorized
+    headers:
+      Date:
+      - Sat, 13 May 2017 17:50:14 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '393'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d0b75f18f158b9aac1ca8b9c27d75f40c1494697814; expires=Sun, 13-May-18
+        17:50:14 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      Accept-Ranges:
+      - bytes
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '73535'
+      Api-Entity-Payload:
+      - StopPointMeta
+      Cache-Control:
+      - public, must-revalidate, max-age=43200, s-maxage=86400
+      Via:
+      - 1.1 varnish
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Backend:
+      - api
+      X-Banning:
+      - ''
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '6'
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '86400.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - 2223106179 2212469693
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 35e7757e38ff3488-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Sat, 13 May 2017 17:50:14 GMT
+recorded_with: VCR 3.0.3

@@ -136,6 +136,14 @@ module TflApi
       TflApi::Client::Cabwise.new(self)
     end
 
+    # Creates an instance to the Journey class by passing a reference to self
+    #
+    # @return [TflApi::Client::Journey] An object to Journey subclass
+    #
+    def journey
+      TflApi::Client::Journey.new(self)
+    end
+
     # Performs a HTTP GET request to the api, based upon the given URI resource
     # and any additional HTTP query parameters. This method will automatically
     # inject the mandatory application id and application key HTTP query
@@ -216,7 +224,7 @@ module TflApi
     def format_request_uri(path, params)
       params.merge!({app_id: app_id, app_key: app_key})
       params_string = URI.encode_www_form(params)
-      URI::HTTPS.build(host: host.host, path: path, query: params_string)
+      URI::HTTPS.build(host: host.host, path: URI.escape(path), query: params_string)
     end
 
     # Parses the given response body as JSON, and returns a hash representation of the

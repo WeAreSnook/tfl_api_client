@@ -1,0 +1,423 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/Journey/JourneyResults/51.5007292,-0.1246254/to/Piccadilly%20Circus%20Station?app_id=TFL_APP_ID&app_key=TFL_APP_KEY&nationalSearch=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.tfl.gov.uk
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 13 May 2017 17:46:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '4466'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da49c7966d9c19a20fb4f76366257471c1494697612; expires=Sun, 13-May-18
+        17:46:52 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Api-Entity-Payload:
+      - ItineraryResult, DisambiguationResult, Mode, StopPoint, Place, Disruption,
+        PlannedWorks, Line, LineStatus
+      Cache-Control:
+      - public, must-revalidate, max-age=150, s-maxage=300
+      Via:
+      - 1.1 varnish
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Backend:
+      - api
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '300.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - '1177301741'
+      Server:
+      - cloudflare-nginx
+      Cf-Ray:
+      - 35e7708b8edc6a3d-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.ItineraryResult,
+        Tfl.Api.Presentation.Entities","journeys":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2017-05-13T18:45:00","duration":18,"arrivalDateTime":"2017-05-13T19:03:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":8,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Westminster","detailed":"Walk
+        to Westminster","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"New Palace Yard for 91 metres","turnDirection":"STRAIGHT","streetName":"New
+        Palace Yard","distance":91,"cumulativeDistance":91,"skyDirection":364,"skyDirectionDescription":"North","cumulativeTravelTime":82,"latitude":51.50065320387,"longitude":-0.12488870556000001,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Continue along ","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Parliament Square, continue
+        for 39 metres","turnDirection":"RIGHT","streetName":"Parliament Square","distance":39,"cumulativeDistance":130,"skyDirection":360,"skyDirectionDescription":"North","cumulativeTravelTime":116,"latitude":51.50067322624,"longitude":-0.12614138795000002,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Bridge Street, continue
+        for 81 metres","turnDirection":"RIGHT","streetName":"Bridge Street","distance":81,"cumulativeDistance":211,"skyDirection":454,"skyDirectionDescription":"North","cumulativeTravelTime":187,"latitude":51.50102347553,"longitude":-0.12611261298,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"}]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000266,"position":"IDEST"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000266,"position":"IDEST"}],"departureTime":"2017-05-13T18:45:00","arrivalTime":"2017-05-13T18:53:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","icsCode":"99999997","commonName":"1
+        New Palace Yard, Westminster","placeType":"StopPoint","additionalProperties":[],"lat":51.50065320387,"lon":-0.12488870556000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUWSM","platformName":"","icsCode":"1000266","commonName":"Westminster
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50125484855,"lon":-0.12483519366000001},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50065320387, -0.12488870556],[51.5007186325,
+        -0.12560642546],[51.50063198767, -0.12581169363],[51.50067322624, -0.12614138795],[51.5008799192,
+        -0.12613290971],[51.50102347553, -0.12611261298],[51.50098662095, -0.12549457244],[51.50095990085,
+        -0.1249481578],[51.50095091421, -0.12494852665],[51.50095091421, -0.12494852665],[51.50112304169,
+        -0.1250279111],[51.50125484855, -0.12483519366]]","stopPoints":[],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"walking","name":"walking","type":"Mode"},"disruptions":[],"plannedWorks":[],"distance":211.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":1,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line to Embankment","detailed":"District
+        line towards Upminster, or Barking","steps":[]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"ESCALATOR","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"}],"departureTime":"2017-05-13T18:53:00","arrivalTime":"2017-05-13T18:54:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUWSM","platformName":"","icsCode":"1000266","commonName":"Westminster
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50125484855,"lon":-0.12483519366000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUEMB","platformName":"","icsCode":"1000075","commonName":"Embankment
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50704132325,"lon":-0.12229201488000001},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50137420731, -0.12498878572],[51.50147859369,
+        -0.12476837597],[51.50174266672, -0.12441173341],[51.502161354, -0.12416400578],[51.50480089264,
+        -0.12333513804],[51.50680168156, -0.12248919741],[51.50705077099, -0.12232044669]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUEMB","name":"Embankment Underground
+        Station","uri":"/StopPoint/940GZZLUEMB","type":"StopPoint"}],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Upminster
+        Underground Station","Barking Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"tube","name":"tube","type":"Mode"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","type":"stopInfo","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall at the start of your journey to ensure the ramp will be
+        available when you arrive at your destination.","additionalInfo":"","created":"2012-06-12T22:26:00","lastUpdate":"2014-10-17T10:49:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","type":"stopInfo","categoryDescription":"RealTime","description":"WESTMINSTER
+        STATION: From Tuesday 3 January until late October 2017, there will be a reduced
+        escalator service at Westminster. This while we carry out planned maintenance
+        work of four escalators, one at a time.\n\nDuring this time please follow
+        signs and allow more time for your journey.","additionalInfo":"","created":"2016-12-07T15:37:00","lastUpdate":"2017-01-09T09:38:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Crowding","type":"stopInfo","categoryDescription":"Crowding","description":"WESTMINSTER:
+        The busiest times at Westminster Tube station are 08:30 - 08:45 and 17:30
+        - 18:00 on weekdays. If you are able to travel outside these times, you could
+        have a quicker and more comfortable journey","additionalInfo":"<a href=\"http://content.tfl.gov.uk/emails/events/travel-options-from-westminster-station.pdf\">Download
+        PDF for details about busiest times at Westminster Tube station</a>","created":"2016-12-15T09:02:00","lastUpdate":"2017-02-28T16:18:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":2,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Bakerloo line to Piccadilly Circus","detailed":"Bakerloo
+        line towards Queen''s Park, Harrow & Wealdstone, or Stonebridge Park","steps":[]},"obstacles":[],"departureTime":"2017-05-13T19:01:00","arrivalTime":"2017-05-13T19:03:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUEMB","platformName":"","icsCode":"1000075","commonName":"Embankment
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50668163159,"lon":-0.12285438223},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUPCC","platformName":"","icsCode":"1000179","commonName":"Piccadilly
+        Circus Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.510090191820005,"lon":-0.13528072441},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50668163159, -0.12285438223],[51.50710053807,
+        -0.12486899313],[51.50724292384, -0.12590067949],[51.50743042419, -0.12806892963],[51.50743042419,
+        -0.12806892963],[51.50757252355, -0.12964823478],[51.50768974371, -0.13079625846],[51.50775655188,
+        -0.13103849967],[51.50787682063, -0.13124973345],[51.50850538956, -0.13175720443],[51.50884248395,
+        -0.13203162809],[51.50983001299, -0.13305764772],[51.50997123127, -0.13345538309],[51.51000552469,
+        -0.13391513427],[51.50995516261, -0.13527182687]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUCHX","name":"Charing Cross Underground
+        Station","uri":"/StopPoint/940GZZLUCHX","type":"StopPoint"},{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUPCC","name":"Piccadilly Circus
+        Underground Station","uri":"/StopPoint/940GZZLUPCC","type":"StopPoint"}],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"Bakerloo","directions":["Queen''s Park
+        Underground Station","Harrow & Wealdstone Underground Station","Stonebridge
+        Park Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","uri":"/Line/bakerloo","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"tube","name":"tube","type":"Mode"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Crowding","type":"stopInfo","categoryDescription":"Crowding","description":"PICCADILLY
+        CIRCUS: The busiest time at Piccadilly Circus Tube station is 17:45 - 18:15
+        on weekdays. If you are able to travel outside this time, you could have a
+        quicker and more comfortable journey","additionalInfo":"<a href=\"http://content.tfl.gov.uk/emails/events/travel-options-from-piccadilly-circus-station.pdf\">Download
+        PDF for details about busiest times at Piccadilly Circus Tube station</a>","created":"2016-12-15T09:37:00","lastUpdate":"2017-02-28T15:36:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2017-05-13T18:47:00","duration":19,"arrivalDateTime":"2017-05-13T19:06:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":8,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Westminster","detailed":"Walk
+        to Westminster","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"New Palace Yard for 91 metres","turnDirection":"STRAIGHT","streetName":"New
+        Palace Yard","distance":91,"cumulativeDistance":91,"skyDirection":364,"skyDirectionDescription":"North","cumulativeTravelTime":82,"latitude":51.50065320387,"longitude":-0.12488870556000001,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Continue along ","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Parliament Square, continue
+        for 39 metres","turnDirection":"RIGHT","streetName":"Parliament Square","distance":39,"cumulativeDistance":130,"skyDirection":360,"skyDirectionDescription":"North","cumulativeTravelTime":116,"latitude":51.50067322624,"longitude":-0.12614138795000002,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Bridge Street, continue
+        for 81 metres","turnDirection":"RIGHT","streetName":"Bridge Street","distance":81,"cumulativeDistance":211,"skyDirection":454,"skyDirectionDescription":"North","cumulativeTravelTime":187,"latitude":51.50102347553,"longitude":-0.12611261298,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"}]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000266,"position":"IDEST"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000266,"position":"IDEST"}],"departureTime":"2017-05-13T18:47:00","arrivalTime":"2017-05-13T18:55:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","icsCode":"99999997","commonName":"1
+        New Palace Yard, Westminster","placeType":"StopPoint","additionalProperties":[],"lat":51.50065320387,"lon":-0.12488870556000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUWSM","platformName":"","icsCode":"1000266","commonName":"Westminster
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50125484855,"lon":-0.12483519366000001},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50065320387, -0.12488870556],[51.5007186325,
+        -0.12560642546],[51.50063198767, -0.12581169363],[51.50067322624, -0.12614138795],[51.5008799192,
+        -0.12613290971],[51.50102347553, -0.12611261298],[51.50098662095, -0.12549457244],[51.50095990085,
+        -0.1249481578],[51.50095091421, -0.12494852665],[51.50095091421, -0.12494852665],[51.50112304169,
+        -0.1250279111],[51.50125484855, -0.12483519366]]","stopPoints":[],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"walking","name":"walking","type":"Mode"},"disruptions":[],"plannedWorks":[],"distance":211.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":2,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line or Circle line to
+        Embankment","detailed":"District line towards Tower Hill, Upminster, or Barking
+        or Circle line towards Embankment and Tower Hill","steps":[]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"ESCALATOR","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"}],"departureTime":"2017-05-13T18:55:00","arrivalTime":"2017-05-13T18:57:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUWSM","platformName":"","icsCode":"1000266","commonName":"Westminster
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50125484855,"lon":-0.12483519366000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUEMB","platformName":"","icsCode":"1000075","commonName":"Embankment
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50704132325,"lon":-0.12229201488000001},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50137420731, -0.12498878572],[51.50147859369,
+        -0.12476837597],[51.50174266672, -0.12441173341],[51.502161354, -0.12416400578],[51.50480089264,
+        -0.12333513804],[51.50680168156, -0.12248919741],[51.50705077099, -0.12232044669]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUEMB","name":"Embankment Underground
+        Station","uri":"/StopPoint/940GZZLUEMB","type":"StopPoint"}],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Tower Hill
+        Underground Station","Upminster Underground Station","Barking Underground
+        Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"Circle","directions":["Embankment and
+        Tower Hill"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","uri":"/Line/circle","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"tube","name":"tube","type":"Mode"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","type":"stopInfo","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall at the start of your journey to ensure the ramp will be
+        available when you arrive at your destination.","additionalInfo":"","created":"2012-06-12T22:26:00","lastUpdate":"2014-10-17T10:49:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","type":"stopInfo","categoryDescription":"RealTime","description":"WESTMINSTER
+        STATION: From Tuesday 3 January until late October 2017, there will be a reduced
+        escalator service at Westminster. This while we carry out planned maintenance
+        work of four escalators, one at a time.\n\nDuring this time please follow
+        signs and allow more time for your journey.","additionalInfo":"","created":"2016-12-07T15:37:00","lastUpdate":"2017-01-09T09:38:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Crowding","type":"stopInfo","categoryDescription":"Crowding","description":"WESTMINSTER:
+        The busiest times at Westminster Tube station are 08:30 - 08:45 and 17:30
+        - 18:00 on weekdays. If you are able to travel outside these times, you could
+        have a quicker and more comfortable journey","additionalInfo":"<a href=\"http://content.tfl.gov.uk/emails/events/travel-options-from-westminster-station.pdf\">Download
+        PDF for details about busiest times at Westminster Tube station</a>","created":"2016-12-15T09:02:00","lastUpdate":"2017-02-28T16:18:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":2,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Bakerloo line to Piccadilly Circus","detailed":"Bakerloo
+        line towards Queen''s Park, Harrow & Wealdstone, or Stonebridge Park","steps":[]},"obstacles":[],"departureTime":"2017-05-13T19:04:00","arrivalTime":"2017-05-13T19:06:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUEMB","platformName":"","icsCode":"1000075","commonName":"Embankment
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50668163159,"lon":-0.12285438223},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUPCC","platformName":"","icsCode":"1000179","commonName":"Piccadilly
+        Circus Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.510090191820005,"lon":-0.13528072441},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50668163159, -0.12285438223],[51.50710053807,
+        -0.12486899313],[51.50724292384, -0.12590067949],[51.50743042419, -0.12806892963],[51.50743042419,
+        -0.12806892963],[51.50757252355, -0.12964823478],[51.50768974371, -0.13079625846],[51.50775655188,
+        -0.13103849967],[51.50787682063, -0.13124973345],[51.50850538956, -0.13175720443],[51.50884248395,
+        -0.13203162809],[51.50983001299, -0.13305764772],[51.50997123127, -0.13345538309],[51.51000552469,
+        -0.13391513427],[51.50995516261, -0.13527182687]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUCHX","name":"Charing Cross Underground
+        Station","uri":"/StopPoint/940GZZLUCHX","type":"StopPoint"},{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUPCC","name":"Piccadilly Circus
+        Underground Station","uri":"/StopPoint/940GZZLUPCC","type":"StopPoint"}],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"Bakerloo","directions":["Queen''s Park
+        Underground Station","Harrow & Wealdstone Underground Station","Stonebridge
+        Park Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","uri":"/Line/bakerloo","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"tube","name":"tube","type":"Mode"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Crowding","type":"stopInfo","categoryDescription":"Crowding","description":"PICCADILLY
+        CIRCUS: The busiest time at Piccadilly Circus Tube station is 17:45 - 18:15
+        on weekdays. If you are able to travel outside this time, you could have a
+        quicker and more comfortable journey","additionalInfo":"<a href=\"http://content.tfl.gov.uk/emails/events/travel-options-from-piccadilly-circus-station.pdf\">Download
+        PDF for details about busiest times at Piccadilly Circus Tube station</a>","created":"2016-12-15T09:37:00","lastUpdate":"2017-02-28T15:36:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2017-05-13T18:50:00","duration":19,"arrivalDateTime":"2017-05-13T19:09:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":8,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Westminster","detailed":"Walk
+        to Westminster","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"New Palace Yard for 91 metres","turnDirection":"STRAIGHT","streetName":"New
+        Palace Yard","distance":91,"cumulativeDistance":91,"skyDirection":364,"skyDirectionDescription":"North","cumulativeTravelTime":82,"latitude":51.50065320387,"longitude":-0.12488870556000001,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Continue along ","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Parliament Square, continue
+        for 39 metres","turnDirection":"RIGHT","streetName":"Parliament Square","distance":39,"cumulativeDistance":130,"skyDirection":360,"skyDirectionDescription":"North","cumulativeTravelTime":116,"latitude":51.50067322624,"longitude":-0.12614138795000002,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Bridge Street, continue
+        for 81 metres","turnDirection":"RIGHT","streetName":"Bridge Street","distance":81,"cumulativeDistance":211,"skyDirection":454,"skyDirectionDescription":"North","cumulativeTravelTime":187,"latitude":51.50102347553,"longitude":-0.12611261298,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"}]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000266,"position":"IDEST"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000266,"position":"IDEST"}],"departureTime":"2017-05-13T18:50:00","arrivalTime":"2017-05-13T18:58:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","icsCode":"99999997","commonName":"1
+        New Palace Yard, Westminster","placeType":"StopPoint","additionalProperties":[],"lat":51.50065320387,"lon":-0.12488870556000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUWSM","platformName":"","icsCode":"1000266","commonName":"Westminster
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50125484855,"lon":-0.12483519366000001},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50065320387, -0.12488870556],[51.5007186325,
+        -0.12560642546],[51.50063198767, -0.12581169363],[51.50067322624, -0.12614138795],[51.5008799192,
+        -0.12613290971],[51.50102347553, -0.12611261298],[51.50098662095, -0.12549457244],[51.50095990085,
+        -0.1249481578],[51.50095091421, -0.12494852665],[51.50095091421, -0.12494852665],[51.50112304169,
+        -0.1250279111],[51.50125484855, -0.12483519366]]","stopPoints":[],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"walking","name":"walking","type":"Mode"},"disruptions":[],"plannedWorks":[],"distance":211.0,"isDisrupted":false,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":1,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"District line to Embankment","detailed":"District
+        line towards Upminster, or Barking","steps":[]},"obstacles":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"ESCALATOR","incline":"DOWN","stopId":1000075,"position":"AFTER"},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle,
+        Tfl.Api.Presentation.Entities","type":"STAIRS","incline":"DOWN","stopId":1000075,"position":"AFTER"}],"departureTime":"2017-05-13T18:58:00","arrivalTime":"2017-05-13T18:59:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUWSM","platformName":"","icsCode":"1000266","commonName":"Westminster
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50125484855,"lon":-0.12483519366000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUEMB","platformName":"","icsCode":"1000075","commonName":"Embankment
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50704132325,"lon":-0.12229201488000001},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50137420731, -0.12498878572],[51.50147859369,
+        -0.12476837597],[51.50174266672, -0.12441173341],[51.502161354, -0.12416400578],[51.50480089264,
+        -0.12333513804],[51.50680168156, -0.12248919741],[51.50705077099, -0.12232044669]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUEMB","name":"Embankment Underground
+        Station","uri":"/StopPoint/940GZZLUEMB","type":"StopPoint"}],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"District","directions":["Upminster
+        Underground Station","Barking Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"district","name":"District","uri":"/Line/district","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"tube","name":"tube","type":"Mode"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Information","type":"stopInfo","categoryDescription":"Information","description":"FULHAM
+        BROADWAY, WIMBLEDON, SOUTHFIELDS, EARLS COURT AND WESTMINSTER STATIONS: A
+        ramp is provided at these stations providing step-free access onto District
+        line trains (as well as Circle line trains at Westminster). Please ask staff
+        in the ticket hall at the start of your journey to ensure the ramp will be
+        available when you arrive at your destination.","additionalInfo":"","created":"2012-06-12T22:26:00","lastUpdate":"2014-10-17T10:49:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"RealTime","type":"stopInfo","categoryDescription":"RealTime","description":"WESTMINSTER
+        STATION: From Tuesday 3 January until late October 2017, there will be a reduced
+        escalator service at Westminster. This while we carry out planned maintenance
+        work of four escalators, one at a time.\n\nDuring this time please follow
+        signs and allow more time for your journey.","additionalInfo":"","created":"2016-12-07T15:37:00","lastUpdate":"2017-01-09T09:38:00"},{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Crowding","type":"stopInfo","categoryDescription":"Crowding","description":"WESTMINSTER:
+        The busiest times at Westminster Tube station are 08:30 - 08:45 and 17:30
+        - 18:00 on weekdays. If you are able to travel outside these times, you could
+        have a quicker and more comfortable journey","additionalInfo":"<a href=\"http://content.tfl.gov.uk/emails/events/travel-options-from-westminster-station.pdf\">Download
+        PDF for details about busiest times at Westminster Tube station</a>","created":"2016-12-15T09:02:00","lastUpdate":"2017-02-28T16:18:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":2,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Bakerloo line to Piccadilly Circus","detailed":"Bakerloo
+        line towards Harrow & Wealdstone, Queen''s Park, or Stonebridge Park","steps":[]},"obstacles":[],"departureTime":"2017-05-13T19:07:00","arrivalTime":"2017-05-13T19:09:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUEMB","platformName":"","icsCode":"1000075","commonName":"Embankment
+        Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.50668163159,"lon":-0.12285438223},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"940GZZLUPCC","platformName":"","icsCode":"1000179","commonName":"Piccadilly
+        Circus Underground Station","placeType":"StopPoint","additionalProperties":[],"lat":51.510090191820005,"lon":-0.13528072441},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50668163159, -0.12285438223],[51.50710053807,
+        -0.12486899313],[51.50724292384, -0.12590067949],[51.50743042419, -0.12806892963],[51.50743042419,
+        -0.12806892963],[51.50757252355, -0.12964823478],[51.50768974371, -0.13079625846],[51.50775655188,
+        -0.13103849967],[51.50787682063, -0.13124973345],[51.50850538956, -0.13175720443],[51.50884248395,
+        -0.13203162809],[51.50983001299, -0.13305764772],[51.50997123127, -0.13345538309],[51.51000552469,
+        -0.13391513427],[51.50995516261, -0.13527182687]]","stopPoints":[{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUCHX","name":"Charing Cross Underground
+        Station","uri":"/StopPoint/940GZZLUCHX","type":"StopPoint"},{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"940GZZLUPCC","name":"Piccadilly Circus
+        Underground Station","uri":"/StopPoint/940GZZLUPCC","type":"StopPoint"}],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"Bakerloo","directions":["Harrow & Wealdstone
+        Underground Station","Queen''s Park Underground Station","Stonebridge Park
+        Underground Station"],"lineIdentifier":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","uri":"/Line/bakerloo","type":"Line","crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"tube","name":"tube","type":"Mode"},"disruptions":[{"$type":"Tfl.Api.Presentation.Entities.Disruption,
+        Tfl.Api.Presentation.Entities","category":"Crowding","type":"stopInfo","categoryDescription":"Crowding","description":"PICCADILLY
+        CIRCUS: The busiest time at Piccadilly Circus Tube station is 17:45 - 18:15
+        on weekdays. If you are able to travel outside this time, you could have a
+        quicker and more comfortable journey","additionalInfo":"<a href=\"http://content.tfl.gov.uk/emails/events/travel-options-from-piccadilly-circus-station.pdf\">Download
+        PDF for details about busiest times at Piccadilly Circus Tube station</a>","created":"2016-12-15T09:37:00","lastUpdate":"2017-02-28T15:36:00"}],"plannedWorks":[],"isDisrupted":true,"hasFixedLocations":true}]},{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Journey,
+        Tfl.Api.Presentation.Entities","startDateTime":"2017-05-13T18:46:00","duration":22,"arrivalDateTime":"2017-05-13T19:08:00","legs":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Leg,
+        Tfl.Api.Presentation.Entities","duration":22,"instruction":{"$type":"Tfl.Api.Presentation.Entities.Instruction,
+        Tfl.Api.Presentation.Entities","summary":"Walk to Piccadilly Circus Underground
+        Station","detailed":"Walk to Piccadilly Circus Underground Station","steps":[{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"New Palace Yard for 91 metres","turnDirection":"STRAIGHT","streetName":"New
+        Palace Yard","distance":91,"cumulativeDistance":91,"skyDirection":364,"skyDirectionDescription":"North","cumulativeTravelTime":82,"latitude":51.50065320387,"longitude":-0.12488870556000001,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Continue along ","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Parliament Square, continue
+        for 56 metres","turnDirection":"RIGHT","streetName":"Parliament Square","distance":56,"cumulativeDistance":147,"skyDirection":360,"skyDirectionDescription":"North","cumulativeTravelTime":131,"latitude":51.50067322624,"longitude":-0.12614138795000002,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Great George Street, continue
+        for 234 metres","turnDirection":"SLIGHT_LEFT","streetName":"Great George Street","distance":234,"cumulativeDistance":381,"skyDirection":275,"skyDirectionDescription":"North","cumulativeTravelTime":339,"latitude":51.50103913346,"longitude":-0.12652980875,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Take a slight left","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Horse Guards Road, continue
+        for 345 metres","turnDirection":"RIGHT","streetName":"Horse Guards Road","distance":345,"cumulativeDistance":726,"skyDirection":363,"skyDirectionDescription":"North","cumulativeTravelTime":650,"latitude":51.501290386579996,"longitude":-0.12987663495000001,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"for 308 metres","turnDirection":"LEFT","streetName":"","distance":308,"cumulativeDistance":1034,"skyDirection":268,"skyDirectionDescription":"North","cumulativeTravelTime":924,"latitude":51.50431131421,"longitude":-0.12927745063999999,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn left","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Carlton House Terrace,
+        continue for 7 metres","turnDirection":"LEFT","streetName":"Carlton House
+        Terrace","distance":7,"cumulativeDistance":1041,"skyDirection":236,"skyDirectionDescription":"North","cumulativeTravelTime":929,"latitude":51.506402279590006,"longitude":-0.13182882068000001,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn left","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Waterloo Place, continue
+        for 198 metres","turnDirection":"RIGHT","streetName":"Waterloo Place","distance":198,"cumulativeDistance":1239,"skyDirection":329,"skyDirectionDescription":"North","cumulativeTravelTime":1106,"latitude":51.50636770918,"longitude":-0.13191669396,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Turn right","trackType":"None"},{"$type":"Tfl.Api.Presentation.Entities.InstructionStep,
+        Tfl.Api.Presentation.Entities","description":"on to Regent Street, continue
+        for 199 metres","turnDirection":"STRAIGHT","streetName":"Regent Street","distance":199,"cumulativeDistance":1438,"skyDirection":329,"skyDirectionDescription":"North","cumulativeTravelTime":1285,"latitude":51.507953173560004,"longitude":-0.13322083138,"pathAttribute":{"$type":"Tfl.Api.Presentation.Entities.PathAttribute,
+        Tfl.Api.Presentation.Entities"},"descriptionHeading":"Continue along ","trackType":"None"}]},"obstacles":[],"departureTime":"2017-05-13T18:46:00","arrivalTime":"2017-05-13T19:08:00","departurePoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","platformName":"","icsCode":"99999997","commonName":"1
+        New Palace Yard","placeType":"StopPoint","additionalProperties":[],"lat":51.50065320387,"lon":-0.12488870556000001},"arrivalPoint":{"$type":"Tfl.Api.Presentation.Entities.StopPoint,
+        Tfl.Api.Presentation.Entities","naptanId":"490G00179B","platformName":"","icsCode":"1000179","commonName":"Piccadilly
+        Circus","placeType":"StopPoint","additionalProperties":[],"lat":51.50954806875,"lon":-0.13455349427},"path":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.Path,
+        Tfl.Api.Presentation.Entities","lineString":"[[51.50065320387, -0.12488870556],[51.50065320387,
+        -0.12488870556],[51.50065320387, -0.12488870556],[51.5007186325, -0.12560642546],[51.50063198767,
+        -0.12581169363],[51.50067322624, -0.12614138795],[51.5008799192, -0.12613290971],[51.50103913346,
+        -0.12652980875],[51.50108588901, -0.12720507773],[51.50114162735, -0.12787997991],[51.50124249788,
+        -0.12912936551],[51.50127611845, -0.12954582868],[51.50129038658, -0.12987663495],[51.50234920603,
+        -0.12973242806],[51.50335689052, -0.12920126643],[51.50375922292, -0.12905510708],[51.50431131421,
+        -0.12927745064],[51.50430783964, -0.12962341457],[51.50439816556, -0.12964853448],[51.50449770779,
+        -0.1296876864],[51.50459725, -0.12972683849],[51.50526196695, -0.13080915493],[51.50572579471,
+        -0.13113600587],[51.50627440167, -0.13170436248],[51.50640227959, -0.13182882068],[51.50636770918,
+        -0.13191669396],[51.50716147494, -0.13263355488],[51.50758843409, -0.13290430347],[51.50795317356,
+        -0.13322083138],[51.50856444835, -0.1337722686],[51.50922065402, -0.13432188485],[51.50953078256,
+        -0.13459743298],[51.50954806875, -0.13455349427]]","stopPoints":[],"elevation":[]},"routeOptions":[{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption,
+        Tfl.Api.Presentation.Entities","name":"","directions":[""]}],"mode":{"$type":"Tfl.Api.Presentation.Entities.Identifier,
+        Tfl.Api.Presentation.Entities","id":"walking","name":"walking","type":"Mode"},"disruptions":[],"plannedWorks":[],"distance":1438.0,"isDisrupted":false,"hasFixedLocations":true}]}],"lines":[{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"bakerloo","name":"Bakerloo","modeName":"tube","disruptions":[],"created":"2017-05-09T12:15:57.163Z","modified":"2017-05-09T12:15:57.163Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good
+        Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo,
+        Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Bakerloo&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"circle","name":"Circle","modeName":"tube","disruptions":[],"created":"2017-05-09T12:15:57.193Z","modified":"2017-05-09T12:15:57.193Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good
+        Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo,
+        Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=Circle&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}},{"$type":"Tfl.Api.Presentation.Entities.Line,
+        Tfl.Api.Presentation.Entities","id":"district","name":"District","modeName":"tube","disruptions":[],"created":"2017-05-09T12:15:57.193Z","modified":"2017-05-09T12:15:57.193Z","lineStatuses":[{"$type":"Tfl.Api.Presentation.Entities.LineStatus,
+        Tfl.Api.Presentation.Entities","id":0,"statusSeverity":10,"statusSeverityDescription":"Good
+        Service","created":"0001-01-01T00:00:00","validityPeriods":[]}],"routeSections":[],"serviceTypes":[{"$type":"Tfl.Api.Presentation.Entities.LineServiceTypeInfo,
+        Tfl.Api.Presentation.Entities","name":"Regular","uri":"/Line/Route?ids=District&serviceTypes=Regular"}],"crowding":{"$type":"Tfl.Api.Presentation.Entities.Crowding,
+        Tfl.Api.Presentation.Entities"}}],"stopMessages":[],"recommendedMaxAgeMinutes":0,"searchCriteria":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria,
+        Tfl.Api.Presentation.Entities","dateTime":"2017-05-13T18:46:00","dateTimeType":"Departing","timeAdjustments":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments,
+        Tfl.Api.Presentation.Entities","earliest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20170513","time":"0300","timeIs":"departing","uri":"/journey/journeyresults/51.5007292,-0.1246254/to/piccadilly%20circus%20station?nationalsearch=false&time=0300&date=20170513&timeIs=departing"},"earlier":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20170513","time":"1845","timeIs":"departing","uri":"/journey/journeyresults/51.5007292,-0.1246254/to/piccadilly%20circus%20station?nationalsearch=false&time=1845&date=20170513&timeIs=departing"},"later":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20170513","time":"1850","timeIs":"departing","uri":"/journey/journeyresults/51.5007292,-0.1246254/to/piccadilly%20circus%20station?nationalsearch=false&time=1850&date=20170513&timeIs=departing"},"latest":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment,
+        Tfl.Api.Presentation.Entities","date":"20170514","time":"0300","timeIs":"departing","uri":"/journey/journeyresults/51.5007292,-0.1246254/to/piccadilly%20circus%20station?nationalsearch=false&time=0300&date=20170514&timeIs=departing"}}},"journeyVector":{"$type":"Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector,
+        Tfl.Api.Presentation.Entities","from":"-0.1246254:51.5007292:WGS84[DD.dddd]","to":"Piccadilly
+        Circus Station","via":"","uri":"/journey/journeyresults/51.5007292,-0.1246254/to/piccadilly%20circus%20station?nationalsearch=false"}}'
+    http_version: 
+  recorded_at: Sat, 13 May 2017 17:46:52 GMT
+recorded_with: VCR 3.0.3

@@ -23,15 +23,28 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-require 'tfl_api_client/version'
-require 'tfl_api_client/client'
-require 'tfl_api_client/accident_stats'
-require 'tfl_api_client/air_quality'
-require 'tfl_api_client/bike_point'
-require 'tfl_api_client/cycle'
-require 'tfl_api_client/cabwise'
-require 'tfl_api_client/journey'
-require 'tfl_api_client/exceptions'
+require_relative '../spec_helper'
 
-module TflApi
+describe TflApi::Client::Journey do
+  let!(:client) { test_client }
+  let!(:journey) { TflApi::Client::Journey.new(client) }
+
+  describe '#modes' do
+    let(:sample_response) { [{ foo: {}, bar: [], baz: 'some string' }] }
+    before  { allow(client).to receive(:get).with('/Journey/Meta/Modes').and_return(sample_response) }
+    subject { journey.modes }
+
+    it { is_expected.to be_an(Array) }
+    it { is_expected.to eq(sample_response) }
+  end
+
+  describe '#planner' do
+    let(:sample_response) { { foo: { bar: [], baz: 'some string' } } }
+    before  { allow(client).to receive(:get).with('/Journey/JourneyResults/LOC_A/to/LOC_B', {}).and_return(sample_response) }
+    subject { journey.planner('LOC_A', 'LOC_B') }
+
+    it { is_expected.to be_an(Hash) }
+    it { is_expected.to eq(sample_response) }
+  end
+
 end
