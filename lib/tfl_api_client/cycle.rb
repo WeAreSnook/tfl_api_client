@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2015 - 2017 Luke Hackett
+# Copyright (c) 2015 - 2018 Luke Hackett
 #
 # MIT License
 #

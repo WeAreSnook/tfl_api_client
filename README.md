@@ -135,7 +135,7 @@ and [Factory Girl][factory_girl].
 
 ## License
 
-Copyright (c) 2015 - 2017 Luke Hackett. MIT Licensed, see [LICENSE][license] for details.
+Copyright (c) 2015 - 2018 Luke Hackett. MIT Licensed, see [LICENSE][license] for details.
 
 [license]: LICENSE
 

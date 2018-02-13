@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2015 - 2017 Luke Hackett
+# Copyright (c) 2015 - 2018 Luke Hackett
 #
 # MIT License
 #
@@ -33,11 +33,7 @@ module Helpers
   # @return [TflApi::Client] A TflApi::Client instance created with valid credentials
   #
   def authorised_client
-    # Fail early if the Application private and public keys are not set
-    fail 'Please set your app id via the TFL_APP_ID environment variable' unless ENV['TFL_APP_ID']
-    fail 'Please set your app key via the TFL_APP_KEY environment variable' unless ENV['TFL_APP_KEY']
-
-    TflApi::Client.new(app_id: ENV['TFL_APP_ID'], app_key: ENV['TFL_APP_KEY'], log_location: '/dev/null')
+    TflApi::Client.new(app_id: 'TEST_TFL_APP_ID', app_key: 'TEST_TFL_APP_KEY', log_location: '/dev/null')
   end
 
   # Returns a new instance of the TflApi::Client class using unauthorised details.
