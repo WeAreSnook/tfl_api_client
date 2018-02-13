@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/Mode/ActiveServiceTypes?app_id=TFL_APP_ID&app_key=TFL_APP_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.tfl.gov.uk
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 13 Feb 2018 15:21:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '110'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6bb9ee7f92b9905ebf5144cd55b6b0f01518535305; expires=Wed, 13-Feb-19
+        15:21:45 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET,POST,PUT,DELETE,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Age:
+      - '0'
+      Api-Entity-Payload:
+      - ActiveServiceType
+      Cache-Control:
+      - public, must-revalidate, max-age=30, s-maxage=60
+      Via:
+      - 1.1 varnish
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Backend:
+      - api
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+      X-Cacheable:
+      - Yes. Cacheable
+      X-Ttl:
+      - '60.000'
+      X-Ttl-Rule:
+      - '0'
+      X-Varnish:
+      - '600568669'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ec8c77aaf4c6b55-LHR
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"$type":"Tfl.Api.Presentation.Entities.ActiveServiceType, Tfl.Api.Presentation.Entities","mode":"tube","serviceType":"Regular"}]'
+    http_version: 
+  recorded_at: Tue, 13 Feb 2018 15:21:45 GMT
+recorded_with: VCR 4.0.0

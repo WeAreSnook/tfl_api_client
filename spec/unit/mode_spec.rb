@@ -23,6 +23,28 @@
 # WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
 
-module TflApi
-  VERSION = '0.6.0'
+require_relative '../spec_helper'
+
+describe TflApi::Client::Mode do
+  let!(:client) { test_client }
+  let!(:mode) { TflApi::Client::Mode.new(client) }
+
+  describe '#active_service_types' do
+    let(:sample_response) { [{ foo: {}, bar: [], baz: 'some string' }] }
+    before  { allow(client).to receive(:get).with('/Mode/ActiveServiceTypes').and_return(sample_response) }
+    subject { mode.active_service_types }
+
+    it { is_expected.to be_an(Array) }
+    it { is_expected.to eq(sample_response) }
+  end
+
+  describe '#next_arrival' do
+    let(:sample_response) { { foo: { bar: [], baz: 'some string' } } }
+    before  { allow(client).to receive(:get).with('/Mode/tube/Arrivals', { count: 2 }).and_return(sample_response) }
+    subject { mode.next_arrival('tube', 2) }
+
+    it { is_expected.to be_an(Hash) }
+    it { is_expected.to eq(sample_response) }
+  end
+
 end

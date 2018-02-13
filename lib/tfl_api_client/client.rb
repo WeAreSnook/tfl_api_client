@@ -144,6 +144,14 @@ module TflApi
       TflApi::Client::Journey.new(self)
     end
 
+    # Creates an instance to the Mode class by passing a reference to self
+    #
+    # @return [TflApi::Client::Mode] An object to Mode subclass
+    #
+    def mode
+      TflApi::Client::Mode.new(self)
+    end
+
     # Performs a HTTP GET request to the api, based upon the given URI resource
     # and any additional HTTP query parameters. This method will automatically
     # inject the mandatory application id and application key HTTP query

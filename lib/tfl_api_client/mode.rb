@@ -24,5 +24,41 @@
 #
 
 module TflApi
-  VERSION = '0.6.0'
+  class Client
+    # This class communicates with the TFL "/Journey" API to obtain
+    # details about taxis and minicabs contact information.
+    #
+    class Mode
+
+      # Initialize the Mode object and store the reference to Client object
+      #
+      # @param client [Client] the client object
+      #
+      # @return [Mode] the Mode object
+      #
+      def initialize(client)
+        @client = client
+      end
+
+      # Returns the service type active for a mode.
+      #
+      # @return [Array] An array of service types that are active for a mode
+      #
+      def active_service_types
+        @client.get('/Mode/ActiveServiceTypes')
+      end
+
+      # Returns the next arrival predictions for all stops of a given mode
+      #
+      # @param mode [String] A mode name e.g. tube, dlr
+      # @param count [Integer] Number of arrivals to return for each stop
+      #
+      # @return [Array] An array of arrival predictions for all stops of a given mode
+      #
+      def next_arrival(mode, count = -1)
+        @client.get("/Mode/#{mode}/Arrivals", { count: count })
+      end
+
+    end
+  end
 end

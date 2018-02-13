@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.tfl.gov.uk/Mode/ActiveServiceTypes?app_id=TFL_APP_ID&app_key=TFL_APP_KEY
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.tfl.gov.uk
+  response:
+    status:
+      code: 302
+      message: Unauthorized
+    headers:
+      Date:
+      - Tue, 13 Feb 2018 15:17:29 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd49714d478240cbf6b6dcd0dadd0b5221518535048; expires=Wed, 13-Feb-19
+        15:17:28 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      Accept-Ranges:
+      - bytes
+      Age:
+      - '0'
+      Cache-Control:
+      - ", s-maxage="
+      Location:
+      - "/static-messages/401.html"
+      Via:
+      - 1.1 varnish
+      X-Banning:
+      - ''
+      X-Cache:
+      - MISS
+      X-Varnish:
+      - '600446010'
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 3ec8c136fc806aa9-LHR
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Tue, 13 Feb 2018 15:17:29 GMT
+recorded_with: VCR 4.0.0

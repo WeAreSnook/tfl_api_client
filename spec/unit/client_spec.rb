@@ -141,6 +141,12 @@ describe TflApi::Client do
     end
   end
 
+  describe '#mode' do
+    it 'should return a Client::Mode object' do
+      expect(test_client.mode).to be_an_instance_of(TflApi::Client::Mode);
+    end
+  end
+
   describe '#get' do
     subject(:client) { test_client }
 
