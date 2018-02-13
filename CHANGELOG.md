@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v0.6.0  [13-FEB-2018]
+* Added support for the /Mode resource.
+
+
 ## v0.5.0  [13-MAY-2017]
 * Added support for the /Journey resource.
 
