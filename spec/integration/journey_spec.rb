@@ -52,7 +52,7 @@ describe '/Journey Integration', type: :feature do
   end
 
   describe '#planner' do
-    let(:from) { '51.5007292,-0.1246254' }
+    let(:from) { '51.542320,-0.061510871' }
     let(:to) { 'Piccadilly Circus Station' }
     let(:options) { { nationalSearch: false } }
 

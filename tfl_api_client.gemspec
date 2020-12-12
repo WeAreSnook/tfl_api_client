@@ -24,14 +24,15 @@ Gem::Specification.new do |spec|
   spec.executables           = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files            = spec.files.grep(%r{^(test|spec|features)/})
 
-  spec.add_development_dependency 'bundler', '~> 1.16'
-  spec.add_development_dependency 'rake', '~> 12.0'
-  spec.add_development_dependency 'yard', '~> 0.9.8'
+  spec.add_development_dependency 'bundler', '~> 2.1.4'
+  spec.add_development_dependency 'rake', '~> 13.0.1'
+  spec.add_development_dependency 'yard', '~> 0.9.25'
+  spec.add_development_dependency 'dotenv', '~> 2.7.6'
 
-  spec.add_development_dependency 'rspec', '~> 3.6'
+  spec.add_development_dependency 'rspec', '~> 3.10'
   spec.add_development_dependency 'fuubar', '~> 2.2'
-  spec.add_development_dependency 'vcr', '~> 4.0'
-  spec.add_development_dependency 'webmock', '~> 3.3'
-  spec.add_development_dependency 'simplecov', '~> 0.14.1'
-  spec.add_development_dependency 'coveralls', '~> 0.8.21'
+  spec.add_development_dependency 'vcr', '~> 6.0'
+  spec.add_development_dependency 'webmock', '~> 3.10'
+  spec.add_development_dependency 'simplecov', '~> 0.16.1'
+  spec.add_development_dependency 'coveralls', '~> 0.8.23'
 end

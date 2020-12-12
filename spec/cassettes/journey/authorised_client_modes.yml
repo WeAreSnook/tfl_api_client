@@ -21,54 +21,66 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 13 May 2017 17:50:14 GMT
+      - Fri, 11 Dec 2020 20:26:16 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '393'
+      - '398'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dfbaabb6caf603a2598524c6bc6d7d05a1494697814; expires=Sun, 13-May-18
-        17:50:14 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      - __cfduid=d4231c6c101c02f19f7adc8f2935ca9ad1607718376; expires=Sun, 10-Jan-21
+        20:26:16 GMT; path=/; domain=.tfl.gov.uk; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - public, must-revalidate, max-age=43200, s-maxage=86400
+      Via:
+      - 1.1 varnish
       Accept-Ranges:
       - bytes
+      Age:
+      - '1466'
       Access-Control-Allow-Headers:
       - Content-Type
       Access-Control-Allow-Methods:
       - GET,POST,PUT,DELETE,OPTIONS
       Access-Control-Allow-Origin:
       - "*"
-      Age:
-      - '73535'
       Api-Entity-Payload:
       - StopPointMeta
-      Cache-Control:
-      - public, must-revalidate, max-age=43200, s-maxage=86400
-      Via:
-      - 1.1 varnish
-      X-Aspnet-Version:
-      - 4.0.30319
       X-Backend:
       - api
-      X-Banning:
-      - ''
       X-Cache:
       - HIT
       X-Cache-Hits:
-      - '5'
+      - '1'
       X-Cacheable:
       - Yes. Cacheable
+      X-Frame-Options:
+      - deny
+      X-Proxy-Connection:
+      - unset
       X-Ttl:
       - '86400.000'
       X-Ttl-Rule:
       - '0'
       X-Varnish:
-      - 2223106162 2212469693
+      - 1024383950 1024229092
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Operation:
+      - Journey_Meta
+      X-Api:
+      - Journey
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06f514aa8e0000f3ef27340000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
-      - cloudflare-nginx
+      - cloudflare
       Cf-Ray:
-      - 35e7757d7f4734c4-LHR
+      - 6001f08a7a0ef3ef-LHR
     body:
       encoding: ASCII-8BIT
       string: '[{"$type":"Tfl.Api.Presentation.Entities.Mode, Tfl.Api.Presentation.Entities","isTflService":false,"isFarePaying":true,"isScheduledService":false,"modeName":"black-cab-as-customer"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
@@ -96,10 +108,10 @@ http_interactions:
         Tfl.Api.Presentation.Entities","isTflService":true,"isFarePaying":true,"isScheduledService":true,"modeName":"replacement-bus"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
         Tfl.Api.Presentation.Entities","isTflService":true,"isFarePaying":true,"isScheduledService":true,"modeName":"river-bus"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
         Tfl.Api.Presentation.Entities","isTflService":true,"isFarePaying":true,"isScheduledService":true,"modeName":"river-tour"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
+        Tfl.Api.Presentation.Entities","isTflService":false,"isFarePaying":false,"isScheduledService":false,"modeName":"taxi"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
         Tfl.Api.Presentation.Entities","isTflService":true,"isFarePaying":true,"isScheduledService":true,"modeName":"tflrail"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
         Tfl.Api.Presentation.Entities","isTflService":true,"isFarePaying":true,"isScheduledService":true,"modeName":"tram"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
         Tfl.Api.Presentation.Entities","isTflService":true,"isFarePaying":true,"isScheduledService":true,"modeName":"tube"},{"$type":"Tfl.Api.Presentation.Entities.Mode,
         Tfl.Api.Presentation.Entities","isTflService":false,"isFarePaying":false,"isScheduledService":false,"modeName":"walking"}]'
-    http_version: 
-  recorded_at: Sat, 13 May 2017 17:50:14 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 11 Dec 2020 20:26:16 GMT
+recorded_with: VCR 6.0.0

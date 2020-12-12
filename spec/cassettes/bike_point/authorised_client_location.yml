@@ -21,63 +21,74 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 16 Feb 2017 19:58:43 GMT
+      - Fri, 11 Dec 2020 20:26:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '409'
+      - '387'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d8b4c89e3d7e98663b9f16470052136f61487275123; expires=Fri, 16-Feb-18
-        19:58:43 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
+      - __cfduid=d892eced8a34851c5110ce9b51a8afa871607718383; expires=Sun, 10-Jan-21
+        20:26:23 GMT; path=/; domain=.tfl.gov.uk; HttpOnly; SameSite=Lax
+      Cache-Control:
+      - public, must-revalidate, max-age=30, s-maxage=60
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
       Access-Control-Allow-Headers:
       - Content-Type
       Access-Control-Allow-Methods:
       - GET,POST,PUT,DELETE,OPTIONS
       Access-Control-Allow-Origin:
       - "*"
-      Age:
-      - '0'
       Api-Entity-Payload:
       - Place
-      Cache-Control:
-      - public, must-revalidate, max-age=150, s-maxage=300
-      Via:
-      - 1.1 varnish
-      X-Aspnet-Version:
-      - 4.0.30319
       X-Backend:
       - api
-      X-Banning:
-      - ''
       X-Cache:
       - MISS
       X-Cacheable:
       - Yes. Cacheable
+      X-Frame-Options:
+      - deny
+      X-Proxy-Connection:
+      - unset
       X-Ttl:
-      - '300.000'
+      - '60.000'
       X-Ttl-Rule:
       - '0'
       X-Varnish:
-      - '2059774854'
+      - '1497010527'
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Operation:
+      - BikePoint_Get
+      X-Api:
+      - BikePoint
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06f514c70a0000004e223f8000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
-      - cloudflare-nginx
+      - cloudflare
       Cf-Ray:
-      - 332393717d9a6b4f-LHR
+      - 6001f0b8080c004e-LHR
     body:
       encoding: ASCII-8BIT
-      string: '{"$type":"Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities","id":"BikePoints_10","url":"https://api-radon.tfl.gov.uk/Place/BikePoints_10","commonName":"Park
+      string: '{"$type":"Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities","id":"BikePoints_10","url":"/Place/BikePoints_10","commonName":"Park
         Street, Bankside","placeType":"BikePoint","additionalProperties":[{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"TerminalName","sourceSystemKey":"BikePoints","value":"001024","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"Installed","sourceSystemKey":"BikePoints","value":"true","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"Locked","sourceSystemKey":"BikePoints","value":"false","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"InstallDate","sourceSystemKey":"BikePoints","value":"1278242460000","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"RemovalDate","sourceSystemKey":"BikePoints","value":"","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"Temporary","sourceSystemKey":"BikePoints","value":"false","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"NbBikes","sourceSystemKey":"BikePoints","value":"16","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"NbEmptyDocks","sourceSystemKey":"BikePoints","value":"2","modified":"2017-02-16T19:28:58.883Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
-        Tfl.Api.Presentation.Entities","category":"Description","key":"NbDocks","sourceSystemKey":"BikePoints","value":"18","modified":"2017-02-16T19:28:58.883Z"}],"children":[],"lat":51.505974,"lon":-0.092754}'
-    http_version: 
-  recorded_at: Thu, 16 Feb 2017 19:58:43 GMT
-recorded_with: VCR 3.0.3
+        Tfl.Api.Presentation.Entities","category":"Description","key":"TerminalName","sourceSystemKey":"BikePoints","value":"001024","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"Installed","sourceSystemKey":"BikePoints","value":"true","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"Locked","sourceSystemKey":"BikePoints","value":"false","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"InstallDate","sourceSystemKey":"BikePoints","value":"1278242460000","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"RemovalDate","sourceSystemKey":"BikePoints","value":"","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"Temporary","sourceSystemKey":"BikePoints","value":"false","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"NbBikes","sourceSystemKey":"BikePoints","value":"7","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"NbEmptyDocks","sourceSystemKey":"BikePoints","value":"11","modified":"2020-12-11T19:38:11.96Z"},{"$type":"Tfl.Api.Presentation.Entities.AdditionalProperties,
+        Tfl.Api.Presentation.Entities","category":"Description","key":"NbDocks","sourceSystemKey":"BikePoints","value":"18","modified":"2020-12-11T19:38:11.96Z"}],"children":[],"lat":51.505974,"lon":-0.092754}'
+  recorded_at: Fri, 11 Dec 2020 20:26:23 GMT
+recorded_with: VCR 6.0.0

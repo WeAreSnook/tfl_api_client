@@ -27,6 +27,7 @@ require 'json'
 require 'logger'
 require 'openssl'
 require 'net/http'
+require 'cgi'
 require 'tfl_api_client/exceptions'
 
 module TflApi
@@ -118,14 +119,6 @@ module TflApi
     #
     def bike_point
       TflApi::Client::BikePoint.new(self)
-    end
-
-    # Creates an instance to the Cycle class by passing a reference to self
-    #
-    # @return [TflApi::Client::Cycle] An object to Cycle subclass
-    #
-    def cycle
-      TflApi::Client::Cycle.new(self)
     end
 
     # Creates an instance to the Cabwise class by passing a reference to self
@@ -232,7 +225,8 @@ module TflApi
     def format_request_uri(path, params)
       params.merge!({app_id: app_id, app_key: app_key})
       params_string = URI.encode_www_form(params)
-      URI::HTTPS.build(host: host.host, path: URI.escape(path), query: params_string)
+      encoded_array = path.split('/').map { |part| URI.encode_www_form_component(part).gsub('+', '%20') }
+      URI::HTTPS.build(host: host.host, path: encoded_array.join('/'), query: params_string)
     end
 
     # Parses the given response body as JSON, and returns a hash representation of the

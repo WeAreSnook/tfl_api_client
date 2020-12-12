@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.tfl.gov.uk/Journey/JourneyResults/51.5007292,-0.1246254/to/Piccadilly%20Circus%20Station?app_id=TFL_APP_ID&app_key=TFL_APP_KEY&nationalSearch=false
+    uri: https://api.tfl.gov.uk/Journey/JourneyResults/51.542320,-0.061510871/to/Piccadilly%20Circus%20Station?app_id=TFL_APP_ID&app_key=TFL_APP_KEY&nationalSearch=false
     body:
       encoding: US-ASCII
       string: ''
@@ -17,58 +17,30 @@ http_interactions:
       - api.tfl.gov.uk
   response:
     status:
-      code: 302
-      message: Unauthorized
+      code: 429
+      message: Invalid App Key
     headers:
       Date:
-      - Sat, 13 May 2017 17:49:21 GMT
-      Content-Type:
-      - application/json; charset=utf-8
+      - Fri, 11 Dec 2020 20:26:22 GMT
       Content-Length:
-      - '4510'
+      - '28'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d395a29bac7b7d6da35f946abb69ef83c1494697760; expires=Sun, 13-May-18
-        17:49:20 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
-      Access-Control-Allow-Headers:
-      - Content-Type
-      Access-Control-Allow-Methods:
-      - GET,POST,PUT,DELETE,OPTIONS
-      Access-Control-Allow-Origin:
-      - "*"
-      Age:
-      - '0'
-      Api-Entity-Payload:
-      - ItineraryResult, DisambiguationResult, Mode, StopPoint, Place, Disruption,
-        PlannedWorks, Line, LineStatus
-      Cache-Control:
-      - public, must-revalidate, max-age=150, s-maxage=300
-      Via:
-      - 1.1 varnish
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Backend:
-      - api
-      X-Banning:
-      - ''
-      X-Cache:
-      - MISS
-      X-Cacheable:
-      - Yes. Cacheable
-      X-Ttl:
-      - '300.000'
-      X-Ttl-Rule:
-      - '0'
-      X-Varnish:
-      - '943744740'
+      - __cfduid=d7d103f91a60a9954d80fb8dd3eb896261607718382; expires=Sun, 10-Jan-21
+        20:26:22 GMT; path=/; domain=.tfl.gov.uk; HttpOnly; SameSite=Lax
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06f514c2760000007534822000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
-      - cloudflare-nginx
+      - cloudflare
       Cf-Ray:
-      - 35e77429095e6ac7-LHR
+      - 6001f0b0b97b0075-LHR
     body:
-      encoding: ASCII-8BIT
-      string: ''
-    http_version: 
-  recorded_at: Sat, 13 May 2017 17:49:20 GMT
-recorded_with: VCR 3.0.3
+      encoding: UTF-8
+      string: Invalid app_key is provided.
+  recorded_at: Fri, 11 Dec 2020 20:26:22 GMT
+recorded_with: VCR 6.0.0

@@ -91,8 +91,7 @@ RSpec.configure do |config|
     # config.default_formatter = 'doc'
   end
 
-  # Use Fuubar to handle pretty printing of the test suite
-  config.default_formatter = 'Fuubar'
+  config.default_formatter = 'documentation'
   config.color = true
 
   # Print the 10 slowest examples and example groups at the

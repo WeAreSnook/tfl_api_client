@@ -17,43 +17,30 @@ http_interactions:
       - api.tfl.gov.uk
   response:
     status:
-      code: 302
-      message: Unauthorized
+      code: 429
+      message: Invalid App Key
     headers:
       Date:
-      - Tue, 13 Feb 2018 15:35:10 GMT
-      Transfer-Encoding:
-      - chunked
+      - Fri, 11 Dec 2020 20:26:27 GMT
+      Content-Length:
+      - '28'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=da5952d1ad939c971a864664f786f35bb1518536110; expires=Wed, 13-Feb-19
-        15:35:10 GMT; path=/; domain=.tfl.gov.uk; HttpOnly
-      Accept-Ranges:
-      - bytes
-      Age:
-      - '0'
-      Cache-Control:
-      - ", s-maxage="
-      Location:
-      - "/static-messages/401.html"
-      Via:
-      - 1.1 varnish
-      X-Banning:
-      - ''
-      X-Cache:
-      - MISS
-      X-Varnish:
-      - '1553514361'
+      - __cfduid=d7cdc04ec6b19683a239702732c652d251607718387; expires=Sun, 10-Jan-21
+        20:26:27 GMT; path=/; domain=.tfl.gov.uk; HttpOnly; SameSite=Lax
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 06f514d66e0000423ef59df000000001
       Expect-Ct:
       - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
       Server:
       - cloudflare
       Cf-Ray:
-      - 3ec8db1fc9d96a61-LHR
+      - 6001f0d0ad76423e-LHR
     body:
       encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 13 Feb 2018 15:35:07 GMT
-recorded_with: VCR 4.0.0
+      string: Invalid app_key is provided.
+  recorded_at: Fri, 11 Dec 2020 20:26:27 GMT
+recorded_with: VCR 6.0.0

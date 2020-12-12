@@ -123,12 +123,6 @@ describe TflApi::Client do
     end
   end
 
-  describe '#cycle' do
-    it 'should return a Client::Cycle object' do
-      expect(test_client.cycle).to be_an_instance_of(TflApi::Client::Cycle)
-    end
-  end
-
   describe '#cabwise' do
     it 'should return a Client::Cabwise object' do
       expect(test_client.cabwise).to be_an_instance_of(TflApi::Client::Cabwise);
